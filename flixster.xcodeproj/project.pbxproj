@@ -15,6 +15,9 @@
 		6D52F8CA21ED541F00B623E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D52F8C821ED541F00B623E4 /* LaunchScreen.storyboard */; };
 		6D52F8D221ED56A500B623E4 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D52F8D121ED56A500B623E4 /* MoviesViewController.swift */; };
 		6D52F8D621ED95BC00B623E4 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D52F8D521ED95BC00B623E4 /* MovieCell.swift */; };
+		6D5F8A9921FD1E3600898F7C /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5F8A9821FD1E3500898F7C /* MovieDetailsViewController.swift */; };
+		6D5F8A9B21FD253D00898F7C /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5F8A9A21FD253D00898F7C /* MovieGridViewController.swift */; };
+		6D5F8A9D21FD27E000898F7C /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5F8A9C21FD27E000898F7C /* MovieGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		6D52F8CB21ED541F00B623E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D52F8D121ED56A500B623E4 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		6D52F8D521ED95BC00B623E4 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		6D5F8A9821FD1E3500898F7C /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		6D5F8A9A21FD253D00898F7C /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		6D5F8A9C21FD27E000898F7C /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		78D5117FB164C255FB5BDE59 /* Pods_flixster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4E1DA43EB3D603BE4DCBB6 /* Pods-flixster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flixster.release.xcconfig"; path = "Pods/Target Support Files/Pods-flixster/Pods-flixster.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +88,7 @@
 		6D52F8BE21ED541C00B623E4 /* flixster */ = {
 			isa = PBXGroup;
 			children = (
+				6D5F8A9821FD1E3500898F7C /* MovieDetailsViewController.swift */,
 				6D52F8D521ED95BC00B623E4 /* MovieCell.swift */,
 				6D52F8BF21ED541C00B623E4 /* AppDelegate.swift */,
 				6D52F8C121ED541C00B623E4 /* ViewController.swift */,
@@ -90,6 +97,8 @@
 				6D52F8C821ED541F00B623E4 /* LaunchScreen.storyboard */,
 				6D52F8D121ED56A500B623E4 /* MoviesViewController.swift */,
 				6D52F8CB21ED541F00B623E4 /* Info.plist */,
+				6D5F8A9A21FD253D00898F7C /* MovieGridViewController.swift */,
+				6D5F8A9C21FD27E000898F7C /* MovieGridCell.swift */,
 			);
 			path = flixster;
 			sourceTree = "<group>";
@@ -168,15 +177,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-flixster-checkManifestLockResult.txt",
 			);
@@ -190,16 +195,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-flixster/Pods-flixster-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
@@ -216,10 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5F8A9921FD1E3600898F7C /* MovieDetailsViewController.swift in Sources */,
 				6D52F8C221ED541C00B623E4 /* ViewController.swift in Sources */,
 				6D52F8C021ED541C00B623E4 /* AppDelegate.swift in Sources */,
 				6D52F8D621ED95BC00B623E4 /* MovieCell.swift in Sources */,
 				6D52F8D221ED56A500B623E4 /* MoviesViewController.swift in Sources */,
+				6D5F8A9B21FD253D00898F7C /* MovieGridViewController.swift in Sources */,
+				6D5F8A9D21FD27E000898F7C /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
